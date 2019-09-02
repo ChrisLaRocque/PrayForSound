@@ -1,0 +1,26 @@
+* {
+  padding: none;
+  margin: none;
+}
+body {
+  color: white;
+}
+nav {
+  background: transparent;
+  position: absolute!important;
+  width: 100%;
+  color: white;
+}
+section {
+  padding: 10vh 5vh;
+}
+#header {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 85%), url('/assets/img/siteheader.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 52vh;
+  padding-top: 56px;
+  padding-bottom: 60vh;
+}
+#promo {
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 10%,rgba(73,30,107,1) 100%);
+}
