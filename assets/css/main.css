@@ -5,6 +5,16 @@
 
 body {
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(#491e6b));
+  background: linear-gradient(to bottom, black 10%, #491e6b 100%);
+}
+
+h2 {
+  color: #f4ab3c;
+}
+
+hr {
+  border: 2px solid #f4ab3c;
 }
 
 nav {
@@ -28,6 +38,69 @@ section {
   padding: 10vh 5vh;
 }
 
+@media (max-width: 37.5em) {
+  section {
+    padding: 10vh 3vh;
+  }
+}
+
+.card {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  margin-bottom: 2vh;
+}
+
+.card .card-header {
+  border-color: white;
+}
+
+.btn {
+  margin-bottom: 2vh;
+}
+
+.btn-outline-primary {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-primary.inverted {
+  color: #341c51;
+  background-color: white;
+}
+
+.btn-outline-primary:hover {
+  color: #341c51;
+  background-color: white;
+}
+
+.btn-outline-primary:hover.inverted {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.btn-outline-secondary {
+  color: #f4ab3c;
+  border-color: #f4ab3c;
+}
+
+.btn-outline-secondary.inverted {
+  color: #341c51;
+  background-color: #f4ab3c;
+}
+
+.btn-outline-secondary:hover {
+  color: #341c51;
+  background-color: #f4ab3c;
+}
+
+.btn-outline-secondary:hover.inverted {
+  color: #f4ab3c;
+  background-color: transparent;
+  border-color: #f4ab3c;
+}
+
 #header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(85%, black)), url("/assets/img/siteheader.jpg") no-repeat center center;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 85%), url("/assets/img/siteheader.jpg") no-repeat center center;
@@ -44,8 +117,20 @@ section {
   }
 }
 
-#music {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(#491e6b));
-  background: linear-gradient(to bottom, black 10%, #491e6b 100%);
+#music .white-shadow {
+  -webkit-box-shadow: 3px 3px 25px 0px grey;
+  box-shadow: 3px 3px 25px 0px grey;
+}
+
+#music .hov-mag {
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+#music .hov-mag:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

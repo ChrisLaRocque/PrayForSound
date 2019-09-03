@@ -21,16 +21,34 @@
     }
   }
 }
+
+// Color Variables
+$white: white;
+$bright-orange: rgba(244, 171, 60, 1);
+$purple: rgba(52, 28, 81, 1);
+
+// Overrides
 * {
   padding: none;
   margin: none;
 }
 body {
-  color: white;
+  color: $white;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(73, 30, 107, 1) 100%
+  );
+}
+h2 {
+  color: $bright-orange;
+}
+hr {
+  border: 2px solid $bright-orange;
 }
 nav {
   background: transparent;
-  color: white;
+  color: $white;
   position: absolute !important;
   width: 100%;
   padding: 1vh 4vh !important;
@@ -39,11 +57,60 @@ nav {
     font-size: 4vh !important;
   }
   a {
-    color: white;
+    color: $white;
   }
 }
 section {
   padding: 10vh 5vh;
+  @include breakpoint(phone) {
+    padding: 10vh 3vh;
+  }
+}
+.card {
+  color: $white;
+  background-color: transparent;
+  border-color: $white;
+  margin-bottom: 2vh;
+  .card-header {
+    border-color: $white;
+  }
+}
+.btn {
+  margin-bottom: 2vh;
+}
+.btn-outline-primary {
+  color: $white;
+  border-color: $white;
+  &.inverted {
+    color: $purple;
+    background-color: $white;
+  }
+  &:hover {
+    color: $purple;
+    background-color: $white;
+    &.inverted {
+      color: $white;
+      background-color: transparent;
+      border-color: $white;
+    }
+  }
+}
+.btn-outline-secondary {
+  color: $bright-orange;
+  border-color: $bright-orange;
+  &.inverted {
+    color: $purple;
+    background-color: $bright-orange;
+  }
+  &:hover {
+    color: $purple;
+    background-color: $bright-orange;
+    &.inverted {
+      color: $bright-orange;
+      background-color: transparent;
+      border-color: $bright-orange;
+    }
+  }
 }
 #header {
   background: linear-gradient(
@@ -62,9 +129,22 @@ section {
   padding-bottom: 60vh;
 }
 #music {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(73, 30, 107, 1) 100%
-  );
+  .white-shadow {
+    -webkit-box-shadow: 3px 3px 25px 0px grey;
+    -moz-box-shadow: 3px 3px 25px 0px grey;
+    box-shadow: 3px 3px 25px 0px grey;
+  }
+  .hov-mag {
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      -webkit-transition: 0.1s ease-in-out;
+      -moz-transition: 0.1s ease-in-out;
+      -o-transition: 0.1s ease-in-out;
+      transition: 0.1s ease-in-out;
+    }
+  }
 }
