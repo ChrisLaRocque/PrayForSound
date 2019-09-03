@@ -102,8 +102,8 @@ section {
 }
 
 #header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(85%, black)), url("/assets/img/siteheader.jpg") no-repeat center center;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 85%), url("/assets/img/siteheader.jpg") no-repeat center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(85%, black)), url("/assets/img/siteheader.jpeg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 85%), url("/assets/img/siteheader.jpeg") no-repeat center center;
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
