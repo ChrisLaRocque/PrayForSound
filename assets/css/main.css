@@ -117,11 +117,6 @@ section {
   }
 }
 
-#music .white-shadow {
-  -webkit-box-shadow: 3px 3px 25px 0px grey;
-  box-shadow: 3px 3px 25px 0px grey;
-}
-
 #music .hov-mag {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
