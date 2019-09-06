@@ -9,4 +9,3 @@ for (var i = 0; i < ids.length; i++) {
     $("#" + id).replaceWith(data);
   });
 }
-

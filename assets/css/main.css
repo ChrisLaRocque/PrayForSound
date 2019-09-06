@@ -8,17 +8,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, black), color-stop(50%, #491e6b), to(#ef762f));
   background: linear-gradient(180deg, black 30%, #491e6b 50%, #ef762f 100%);
   font-family: bc-alphapipe, sans-serif;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  overflow-y: scroll;
-}
-
-@media (max-width: 37.5em) {
-  body {
-    -ms-scroll-snap-type: inherit;
-        scroll-snap-type: inherit;
-  }
 }
 
 h2 {
@@ -77,7 +66,6 @@ nav li.nav-item {
 
 section {
   padding: 7vh 10vh;
-  scroll-snap-align: start;
 }
 
 @media (max-width: 37.5em) {
