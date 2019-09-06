@@ -270,6 +270,7 @@ section {
     border-radius: .25rem;
     border-color: $white;
     font-size: 2vh;
+    font-weight: 400;
     &:hover {
       opacity: 1;
       color: $purple!important;
@@ -285,6 +286,7 @@ section {
       border: 4px solid $white;
       border-radius: .25rem;
       font-size: 2vh;
+      font-weight: 400;
     &:hover {
         opacity: 1;
         color: $white;
@@ -310,12 +312,7 @@ section {
       width: 100%;
     }
   }
-    
-  // .bit-widget * {
-  //   color: red;
-  // }
 }
-// Merch styles
 
 
 // Video Styles

@@ -255,6 +255,7 @@ section {
   border-radius: .25rem;
   border-color: white;
   font-size: 2vh;
+  font-weight: 400;
 }
 
 #tour .bit-rsvp:hover {
@@ -271,6 +272,7 @@ section {
   border: 4px solid white;
   border-radius: .25rem;
   font-size: 2vh;
+  font-weight: 400;
 }
 
 #tour .bit-offers:hover {
