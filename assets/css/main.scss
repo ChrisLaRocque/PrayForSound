@@ -368,3 +368,17 @@ footer {
   }
 
 }
+
+// Modals
+.modal-content {
+  background-color:rgba(0,0,0,0.5);
+  color:  white;
+  border:  2px solid;
+  border-color: $white;
+  span {
+    color: $white;
+  }
+  i {
+    font-size: 5vh;
+  }
+}
