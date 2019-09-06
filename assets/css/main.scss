@@ -41,6 +41,8 @@ body {
   // );
   background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(73,30,107,1) 50%, rgba(239,118,47,1) 100%); 
   font-family: bc-alphapipe, sans-serif;
+  scroll-snap-type: y proximity;
+
 }
 h2 {
   // color: $bright-orange;
@@ -89,6 +91,7 @@ nav {
 }
 section {
   padding: 7vh 10vh;
+  scroll-snap-align: start;
   @include breakpoint(phone) {
     padding: 4vh;
   }
