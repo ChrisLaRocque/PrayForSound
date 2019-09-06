@@ -22,6 +22,15 @@ p {
   font-family: abril-display, serif;
 }
 
+a {
+  color: inherit;
+}
+
+a i:hover {
+  color: white;
+  opacity: .5;
+}
+
 nav {
   background: transparent;
   color: white;
@@ -329,8 +338,13 @@ section {
   font-size: 2vh;
 }
 
+footer {
+  font-size: 3vh;
+  padding: 3vh 0;
+}
+
 footer .fa {
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 @media (max-width: 37.5em) {

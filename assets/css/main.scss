@@ -52,6 +52,15 @@ hr {
 p {
   font-family: abril-display, serif;
 }
+a {
+  color: inherit;
+  i {
+    &:hover {
+      color: $white;
+      opacity: .5;
+    }
+  }
+}
 
 // Nav Styles
 nav {
@@ -347,8 +356,10 @@ section {
 
 // Footer Styles
 footer {
+  font-size: 3vh;
+  padding: 3vh 0;
   .fa {
-    font-size: 5vh;
+    font-size: 4vh;
   }
   @include breakpoint(phone){
     .col-lg-1 {
