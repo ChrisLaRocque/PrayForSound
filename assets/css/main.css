@@ -7,14 +7,19 @@ body {
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(#491e6b));
   background: linear-gradient(to bottom, black 10%, #491e6b 100%);
+  font-family: bc-alphapipe, sans-serif;
 }
 
 h2 {
-  color: #f4ab3c;
+  color: white;
 }
 
 hr {
-  border: 2px solid #f4ab3c;
+  border: 2px solid white;
+}
+
+p {
+  font-family: abril-display, serif;
 }
 
 nav {
@@ -26,21 +31,37 @@ nav {
   font-size: 2vh;
 }
 
+@media (max-width: 37.5em) {
+  nav {
+    padding: 1vh 3vh !important;
+  }
+}
+
 nav .navbar-brand {
   font-size: 4vh !important;
+}
+
+@media (max-width: 37.5em) {
+  nav .navbar-brand {
+    font-size: 3.5vh !important;
+  }
 }
 
 nav a {
   color: white;
 }
 
+nav li.nav-item {
+  font-size: 2.25vh;
+}
+
 section {
-  padding: 10vh 5vh;
+  padding: 10vh;
 }
 
 @media (max-width: 37.5em) {
   section {
-    padding: 5vh 3vh;
+    padding: 5vh 4vh;
   }
 }
 
@@ -57,6 +78,8 @@ section {
 
 .btn {
   margin-bottom: 2vh;
+  border: 4px solid;
+  font-size: 2vh;
 }
 
 .btn-outline-primary {
@@ -72,6 +95,7 @@ section {
 .btn-outline-primary:hover {
   color: #341c51;
   background-color: white;
+  border-color: white;
 }
 
 .btn-outline-primary:hover.inverted {
@@ -93,6 +117,7 @@ section {
 .btn-outline-secondary:hover {
   color: #341c51;
   background-color: #f4ab3c;
+  border-color: #f4ab3c;
 }
 
 .btn-outline-secondary:hover.inverted {
@@ -113,7 +138,7 @@ section {
 @media (max-width: 37.5em) {
   #header {
     min-height: 0vh;
-    padding-bottom: 35vh;
+    padding-bottom: 40vh;
   }
 }
 
@@ -127,5 +152,13 @@ section {
           transform: scale(1.01);
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
+}
+
+#merch .row {
+  margin: 3vh 0;
+}
+
+#merch div.container-fluid:last-child div.row {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

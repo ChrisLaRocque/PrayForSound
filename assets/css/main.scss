@@ -39,33 +39,52 @@ body {
     rgba(0, 0, 0, 1) 10%,
     rgba(73, 30, 107, 1) 100%
   );
+  font-family: bc-alphapipe, sans-serif;
 }
 h2 {
-  color: $bright-orange;
+  // color: $bright-orange;
+  color: $white;
 }
 hr {
-  border: 2px solid $bright-orange;
+  // border: 2px solid $bright-orange;
+  border: 2px solid $white;
 }
+p {
+  font-family: abril-display, serif;
+}
+
+// Nav Styles
 nav {
   background: transparent;
   color: $white;
   position: absolute !important;
   width: 100%;
   padding: 1vh 4vh !important;
+  @include breakpoint(phone) {
+    padding: 1vh 3vh !important;
+  }
   font-size: 2vh;
   .navbar-brand {
     font-size: 4vh !important;
+    @include breakpoint(phone) {
+      font-size: 3.5vh !important;
+    }
   }
   a {
     color: $white;
   }
-}
-section {
-  padding: 10vh 5vh;
-  @include breakpoint(phone) {
-    padding: 5vh 3vh;
+  li.nav-item {
+    font-size: 2.25vh;
   }
 }
+section {
+  padding: 10vh;
+  @include breakpoint(phone) {
+    padding: 5vh 4vh;
+  }
+}
+
+// Class Overrides
 .card {
   color: $white;
   background-color: transparent;
@@ -77,6 +96,8 @@ section {
 }
 .btn {
   margin-bottom: 2vh;
+  border: 4px solid;
+  font-size: 2vh;
 }
 .btn-outline-primary {
   color: $white;
@@ -88,6 +109,7 @@ section {
   &:hover {
     color: $purple;
     background-color: $white;
+    border-color: $white;
     &.inverted {
       color: $white;
       background-color: transparent;
@@ -105,6 +127,7 @@ section {
   &:hover {
     color: $purple;
     background-color: $bright-orange;
+    border-color: $bright-orange;
     &.inverted {
       color: $bright-orange;
       background-color: transparent;
@@ -112,6 +135,8 @@ section {
     }
   }
 }
+
+// Header Styles
 #header {
   background: linear-gradient(
       to bottom,
@@ -124,10 +149,12 @@ section {
   padding-top: 56px;
   @include breakpoint(phone) {
     min-height: 0vh;
-    padding-bottom: 35vh;
+    padding-bottom: 40vh;
   }
   padding-bottom: 60vh;
 }
+
+// Music styles
 #music {
   // .white-shadow {
   //   -webkit-box-shadow: 3px 3px 25px 0px grey;
@@ -146,5 +173,15 @@ section {
       -o-transition: 0.1s ease-in-out;
       transition: 0.1s ease-in-out;
     }
+  }
+}
+
+// Merch styles
+#merch {
+  .row {
+    margin: 3vh 0;
+  }
+  div.container-fluid:last-child div.row {
+    margin-bottom: 0;
   }
 }
