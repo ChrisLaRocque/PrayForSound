@@ -10,6 +10,7 @@ body {
   font-family: bc-alphapipe, sans-serif;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
 
 h2 {
