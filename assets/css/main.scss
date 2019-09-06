@@ -43,9 +43,9 @@ body {
   font-family: bc-alphapipe, sans-serif;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
-  // @include breakpoint(phone){
-  //   scroll-snap-type: inherit;
-  // }
+  @include breakpoint(phone){
+    scroll-snap-type: inherit;
+  }
 }
 h2 {
   // color: $bright-orange;

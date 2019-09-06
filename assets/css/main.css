@@ -13,6 +13,13 @@ body {
   overflow-y: scroll;
 }
 
+@media (max-width: 37.5em) {
+  body {
+    -ms-scroll-snap-type: inherit;
+        scroll-snap-type: inherit;
+  }
+}
+
 h2 {
   color: white;
 }
