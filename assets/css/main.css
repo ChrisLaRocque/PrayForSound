@@ -306,18 +306,12 @@ section {
   }
 }
 
-#video .overlay {
-  opacity: 0;
-}
-
-#video .overlay .fa-play-circle {
-  font-size: 5vh;
-  color: white;
-}
-
 @media (max-width: 37.5em) {
   #video .video-cover .overlay {
     opacity: 1;
+  }
+  #video .video-cover img {
+    opacity: .25;
   }
 }
 
@@ -336,11 +330,17 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 75%;
+  opacity: 0;
 }
 
 #video .overlay h4 {
   color: white;
-  font-size: 2vh;
+  font-size: 3vh;
+}
+
+#video .overlay .fa-play-circle {
+  font-size: 5vh;
+  color: white;
 }
 
 footer {

@@ -319,17 +319,13 @@ section {
 
 // Video Styles
 #video {
-  .overlay {
-    opacity: 0;
-    .fa-play-circle {
-      font-size: 5vh;
-      color: white;
-    }
-  }
   .video-cover {
     @include breakpoint(phone){
       .overlay {
         opacity: 1;
+      }
+      img {
+        opacity: .25;
       }
     }
     &:hover {
@@ -347,9 +343,14 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
+    opacity: 0;
     h4 {
       color: $white;
-      font-size: 2vh;
+      font-size: 3vh;
+    }
+    .fa-play-circle {
+      font-size: 5vh;
+      color: white;
     }
   }
 }
