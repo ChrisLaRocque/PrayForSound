@@ -34,11 +34,12 @@ $purple: rgba(52, 28, 81, 1);
 }
 body {
   color: $white;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(73, 30, 107, 1) 100%
-  );
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(0, 0, 0, 1) 10%,
+  //   rgba(73, 30, 107, 1) 100%
+  // );
+  background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(73,30,107,1) 50%, rgba(239,118,47,1) 100%); 
   font-family: bc-alphapipe, sans-serif;
 }
 h2 {
@@ -89,7 +90,7 @@ nav {
 section {
   padding: 7vh 10vh;
   @include breakpoint(phone) {
-    padding: 5vh 4vh;
+    padding: 4vh;
   }
 }
 
@@ -165,7 +166,7 @@ section {
     min-height: 0vh;
     padding-bottom: 40vh;
   }
-  padding-bottom: 60vh;
+  padding-bottom: 75vh;
 }
 
 // Music styles
@@ -319,14 +320,15 @@ section {
 #video {
   .overlay {
     opacity: 0;
+    .fa-play-circle {
+      font-size: 5vh;
+      color: white;
+    }
   }
   .video-cover {
     @include breakpoint(phone){
       .overlay {
         opacity: 1;
-      }
-      img {
-        opacity: .25;
       }
     }
     &:hover {

@@ -5,8 +5,8 @@
 
 body {
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(#491e6b));
-  background: linear-gradient(to bottom, black 10%, #491e6b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, black), color-stop(50%, #491e6b), to(#ef762f));
+  background: linear-gradient(180deg, black 30%, #491e6b 50%, #ef762f 100%);
   font-family: bc-alphapipe, sans-serif;
 }
 
@@ -70,7 +70,7 @@ section {
 
 @media (max-width: 37.5em) {
   section {
-    padding: 5vh 4vh;
+    padding: 4vh;
   }
 }
 
@@ -147,7 +147,7 @@ section {
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
-  padding-bottom: 60vh;
+  padding-bottom: 75vh;
 }
 
 @media (max-width: 37.5em) {
@@ -309,12 +309,14 @@ section {
   opacity: 0;
 }
 
+#video .overlay .fa-play-circle {
+  font-size: 5vh;
+  color: white;
+}
+
 @media (max-width: 37.5em) {
   #video .video-cover .overlay {
     opacity: 1;
-  }
-  #video .video-cover img {
-    opacity: .25;
   }
 }
 

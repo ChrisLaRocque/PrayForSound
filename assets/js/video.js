@@ -49,9 +49,9 @@ function createVideoElements(data) {
 
     // Element template
     var template =
-      "<div class='col-lg-4 mb-2'><a href='http://www.youtube.com/watch?v=" +
+      "<div class='col-lg-4 mb-2 video-cover'><a href='http://www.youtube.com/watch?v=" +
       vidID +
-      "' data-toggle='lightbox' data-gallery='youtubevideos' class='video-cover'><div class='overlay'><h4>" + vidTitle + "</h4></div><img src='" +
+      "' data-toggle='lightbox' data-gallery='youtubevideos'><div class='overlay text-center my-auto'><h4>" + vidTitle + "</h4><i class='fa fa-play-circle'></i></div><img src='" +
       vidImage +
       "' class='img-fluid'/>" +
       "</a></div>"
@@ -60,4 +60,4 @@ function createVideoElements(data) {
   }
 }
 
-getPlaylist("PLEj3ZEnwxSTX34kSxECV9SI-di6wKVKpC")
+getPlaylist("PLEj3ZEnwxSTXmF3Pig__71hZlJcL_z-jQ")
