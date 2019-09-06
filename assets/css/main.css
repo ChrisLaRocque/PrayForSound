@@ -154,11 +154,38 @@ section {
   transition: 0.1s ease-in-out;
 }
 
-#merch .row {
-  margin: 3vh 0;
+#tour a.bit-top-track-button {
+  text-transform: uppercase;
 }
 
-#merch div.container-fluid:last-child div.row {
-  margin-bottom: 0;
+#tour .bit-event-list-title, #tour .bit-venue, #tour .bit-lineUp, #tour .bit-lineUp-with {
+  font-family: abril-display, serif;
+}
+
+#tour .bit-date, #tour .bit-location {
+  text-transform: uppercase;
+}
+
+#tour .bit-location {
+  font-weight: 400;
+}
+
+#tour .bit-widget.bit-layout-ipad .bit-event .bit-button {
+  border-radius: .25rem;
+  font-weight: 400;
+}
+
+#tour .widget {
+  padding: 0 1vh;
+}
+
+footer .fa {
+  font-size: 5vh;
+}
+
+@media (max-width: 37.5em) {
+  footer .col-lg-1 {
+    margin-bottom: 5vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

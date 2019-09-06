@@ -176,12 +176,49 @@ section {
   }
 }
 
+
+// Tour Styles
+#tour {
+  // Track Header Text
+  a.bit-top-track-button {
+    text-transform: uppercase;
+  }
+  // Upcoming and Past Show Dates Header
+  .bit-event-list-title, .bit-venue, .bit-lineUp, .bit-lineUp-with {
+    font-family: abril-display, serif;
+  }
+  .bit-date, .bit-location {
+    text-transform: uppercase;
+  }
+  .bit-location {
+    font-weight: 400;
+  }
+  // Event Specific Buttons
+  .bit-widget.bit-layout-ipad .bit-event .bit-button {
+    border-radius: .25rem;
+    font-weight: 400;
+  }
+  .widget {
+    padding: 0 1vh;
+  }
+  // .bit-widget * {
+  //   color: red;
+  // }
+}
 // Merch styles
 #merch {
-  .row {
-    margin: 3vh 0;
+
+}
+
+// Footer Styles
+footer {
+  .fa {
+    font-size: 5vh;
   }
-  div.container-fluid:last-child div.row {
-    margin-bottom: 0;
+  @include breakpoint(phone){
+    .col-lg-1 {
+      margin-bottom: 5vh;
+    }
   }
+
 }

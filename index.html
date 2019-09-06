@@ -30,6 +30,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Fontawesome Import -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Main CSS Import -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
@@ -44,7 +47,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-12 my-auto">
+            <div class="text-right">
             <h2>WAVES</h2>
+            <h3>OUT NOVEMBER 8</h3>
+            </div>
             <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,7 +109,7 @@
             <h2>TOUR</h2>
             <hr />
           </div>
-          <div class="col-12">
+          <div class="col-12 widget">
             <script
               charset="utf-8"
               src="https://widget.bandsintown.com/main.min.js"
@@ -129,8 +135,8 @@
         </div>
       </div>
     </section>
-
-    <section id="merch">
+    
+    <section id="merch" style="display:none">
       <div class="container-fluid">
         <div class="row">
           <div class="col">
@@ -223,8 +229,33 @@
       </div>
     </section>
 
-    <footer>
-      <p>&copy;&nbsp;2019 Pray for Sound</p>
+    <footer class="text-center">
+      <span>&copy;&nbsp;2019 PRAY FOR SOUND</span>
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-lg-1 col-3 mx-auto">
+            <i class="fa fa-facebook"></i>
+          </div>
+          <div class="col-lg-1 col-3 mx-auto">
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div class="col-lg-1 col-3 mx-auto">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="col-lg-1 col-3 mx-auto">
+            <i class="fa fa-youtube-play"></i>
+          </div>
+          <div class="col-lg-1 col-4 mx-auto">
+            <i class="fa fa-bandcamp"></i>
+          </div>
+          <div class="col-lg-1 col-4 mx-auto">
+            <i class="fa fa-spotify"></i>
+          </div>
+          <div class="col-lg-1 col-4 mx-auto">
+            <i class="fa fa-apple"></i>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- JQuery Import Again? -->
@@ -255,18 +286,7 @@
     ></script>
 
     <script src="https://apis.google.com/js/api.js"></script>
-    <script>
-      /**
-       * Sample JavaScript code for youtube.playlistItems.list
-       * See instructions for running APIs Explorer code samples locally:
-       * https://developers.google.com/explorer-help/guides/code_samples#javascript
-       */
-    </script>
-    <!-- <button onclick="authenticate().then(loadClient)">
-      authorize and load
-    </button>
-    <button onclick="execute()">execute</button> -->
-
+  
     <!-- Main JS Import -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/video.js"></script>
