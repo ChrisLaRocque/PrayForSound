@@ -78,7 +78,7 @@ nav {
   }
 }
 section {
-  padding: 10vh;
+  padding: 7vh 10vh;
   @include breakpoint(phone) {
     padding: 5vh 4vh;
   }
@@ -105,6 +105,11 @@ section {
   &.inverted {
     color: $purple;
     background-color: $white;
+  }
+  @include breakpoint(phone){
+    &.w-25 {
+      width: 100%!important;
+    }
   }
   &:hover {
     color: $purple;
@@ -179,19 +184,68 @@ section {
 
 // Tour Styles
 #tour {
+  .bit-event {
+    a {
+      &:hover {
+        color: inherit;
+      }
+    }
+    a.bit-details {
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
   // Track Header Text
   a.bit-top-track-button {
     text-transform: uppercase;
+    font-size: 2.25vh;
+    font-weight: 400;
   }
   // Upcoming and Past Show Dates Header
-  .bit-event-list-title, .bit-venue, .bit-lineUp, .bit-lineUp-with {
+  .bit-event-list-title {
+    color: $white;
+    border: 4px solid;
+    border-radius: .25rem;
+    border-color: $white;
+    font-size: 2vh;
+    font-weight: 400!important;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 20%;
+    padding: .375rem .75rem;
+    text-align: center;
+    margin: 1vh auto;
+    @include breakpoint(phone){
+      display: block;
+      width: 100%;
+    }
+    &:hover {
+      opacity: 1;
+      color: $purple;
+      background-color: $white;
+      border: 4px solid;
+      border-color: $white;
+      cursor: pointer;
+    }
+  }
+  .bit-nav-bar-container {
+    margin: 2vh auto;
+  }
+  .bit-nav-bar {
+    margin: 3vh auto;
+    @include breakpoint(phone){
+    display: block;
+    }
+  }
+  .bit-lineUp, .bit-location, .bit-lineUp-with {
     font-family: abril-display, serif;
   }
-  .bit-date, .bit-location {
+  .bit-date, .bit-venue {
     text-transform: uppercase;
   }
   .bit-location {
-    font-weight: 400;
+    font-weight: 700;
   }
   // Event Specific Buttons
   .bit-widget.bit-layout-ipad .bit-event .bit-button {
@@ -201,13 +255,94 @@ section {
   .widget {
     padding: 0 1vh;
   }
+  .bit-rsvp {
+    color: $white;
+    border: 4px solid;
+    border-radius: .25rem;
+    border-color: $white;
+    font-size: 2vh;
+    &:hover {
+      opacity: 1;
+      color: $purple!important;
+      background-color: $white;
+      border: 4px solid;
+      border-color: $white;
+    }
+  }
+
+  .bit-offers {
+      color: $purple;
+      background-color: $white;
+      border: 4px solid $white;
+      border-radius: .25rem;
+      font-size: 2vh;
+    &:hover {
+        opacity: 1;
+        color: $white;
+        background-color: transparent;
+        border: 4px solid;
+        border-color: $white;
+    }
+  }
+  .bit-play-my-city-button {
+    font-size: 2vh;
+    font-weight: 400;
+    width: 25%;
+    margin: 5vh auto;
+    border: 4px solid $white;
+    border-radius: .25rem;
+    &:hover {
+      color: $white;
+      background-color: transparent;
+      border-color: $white;
+      text-decoration: none;
+    }
+    @include breakpoint(phone){
+      width: 100%;
+    }
+  }
+    
   // .bit-widget * {
   //   color: red;
   // }
 }
 // Merch styles
-#merch {
 
+
+// Video Styles
+#video {
+  .overlay {
+    opacity: 0;
+  }
+  .video-cover {
+    @include breakpoint(phone){
+      .overlay {
+        opacity: 1;
+      }
+      img {
+        opacity: .25;
+      }
+    }
+    &:hover {
+      .overlay {
+        opacity: 1;
+      }
+      img {
+        opacity: .25;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    h4 {
+      color: $white;
+      font-size: 2vh;
+    }
+  }
 }
 
 // Footer Styles
@@ -217,7 +352,7 @@ footer {
   }
   @include breakpoint(phone){
     .col-lg-1 {
-      margin-bottom: 5vh;
+      margin-bottom: 3vh;
     }
   }
 
