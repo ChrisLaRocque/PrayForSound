@@ -8,6 +8,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, black), color-stop(50%, #491e6b), to(#ef762f));
   background: linear-gradient(180deg, black 30%, #491e6b 50%, #ef762f 100%);
   font-family: bc-alphapipe, sans-serif;
+  scroll-behavior: smooth;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
   overflow-y: scroll;
