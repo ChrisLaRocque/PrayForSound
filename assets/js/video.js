@@ -49,7 +49,7 @@ function createVideoElements(data) {
 
     // Element template
     var template =
-      "<div class='col-lg-4 mb-2 video-cover'><a href='http://www.youtube.com/watch?v=" +
+      "<div class='col-lg-4 my-3 mx-auto video-cover'><a href='http://www.youtube.com/watch?v=" +
       vidID +
       "' data-toggle='lightbox' data-gallery='youtubevideos'><div class='overlay text-center my-auto'><h4>" + vidTitle + "</h4><i class='fa fa-play-circle'></i></div><img src='" +
       vidImage +

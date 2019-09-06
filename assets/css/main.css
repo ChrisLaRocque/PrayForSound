@@ -159,6 +159,7 @@ section {
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
+  opacity: 1;
   padding-bottom: 75vh;
 }
 

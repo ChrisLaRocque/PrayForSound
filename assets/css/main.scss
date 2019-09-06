@@ -169,6 +169,7 @@ section {
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
+  opacity: 1;
   @include breakpoint(phone) {
     min-height: 0vh;
     padding-bottom: 40vh;
