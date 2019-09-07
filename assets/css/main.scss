@@ -113,7 +113,7 @@ section {
   color: $white;
   border-color: $white;
   &.inverted {
-    color: $purple;
+    color: black;
     background-color: $white;
   }
   @include breakpoint(phone){
@@ -122,7 +122,7 @@ section {
     }
   }
   &:hover {
-    color: $purple;
+    color: black;
     background-color: $white;
     border-color: $white;
     &.inverted {
@@ -140,7 +140,7 @@ section {
     background-color: $bright-orange;
   }
   &:hover {
-    color: $purple;
+    color: $black;
     background-color: $bright-orange;
     border-color: $bright-orange;
     &.inverted {
