@@ -1,0 +1,30 @@
+.press_page {
+  #header {
+    background: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 1) 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(0, 0, 0, 1) 85%
+      ),
+      url("../img/press-header.jpg") no-repeat center center;
+    background-size: cover;
+    background-position-x: 35%;
+    min-height: 70vh;
+    padding-top: 56px;
+    padding-bottom: 75vh;
+    opacity: 1;
+    @include breakpoint(phone) {
+      min-height: 0vh;
+      padding-bottom: 40vh;
+    }
+  }
+
+
+  .photo-gallery .photos {
+    padding-bottom:20px;
+  }
+
+  .photo-gallery .item {
+    padding-bottom:30px;
+  }
+}

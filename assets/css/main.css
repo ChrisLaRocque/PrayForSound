@@ -1,3 +1,29 @@
+.press_page #header {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(85%, black)), url("../img/press-header.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 30%, black 85%), url("../img/press-header.jpg") no-repeat center center;
+  background-size: cover;
+  background-position-x: 35%;
+  min-height: 70vh;
+  padding-top: 56px;
+  padding-bottom: 75vh;
+  opacity: 1;
+}
+
+@media (max-width: 37.5em) {
+  .press_page #header {
+    min-height: 0vh;
+    padding-bottom: 40vh;
+  }
+}
+
+.press_page .photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.press_page .photo-gallery .item {
+  padding-bottom: 30px;
+}
+
 * {
   padding: none;
   margin: none;
@@ -147,8 +173,8 @@ section {
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
-  opacity: 1;
   padding-bottom: 75vh;
+  opacity: 1;
 }
 
 @media (max-width: 37.5em) {

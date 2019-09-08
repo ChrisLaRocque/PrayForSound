@@ -1,31 +1,8 @@
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: 70em) {
-      @content;
-    }
-  } @else if $point == laptop {
-    @media (min-width: 64em) {
-      @content;
-    }
-  } @else if $point == tablet {
-    @media (min-width: 50em) {
-      @content;
-    }
-  } @else if $point == phablet {
-    @media (min-width: 37.5em) {
-      @content;
-    }
-  } @else if $point == phone {
-    @media (max-width: 37.5em) {
-      @content;
-    }
-  }
-}
+@import "_colors.scss";
+@import "_mixins.scss";
+@import "_press.scss";
 
-// Color Variables
-$white: white;
-$bright-orange: rgba(244, 171, 60, 1);
-$purple: rgba(52, 28, 81, 1);
+
 
 // Overrides
 * {
@@ -82,6 +59,7 @@ nav {
     font-size: 2.25vh;
   }
 }
+// Component Styles
 section {
   padding: 7vh 10vh;
   @include breakpoint(phone) {
@@ -157,12 +135,12 @@ section {
   background-size: cover;
   min-height: 70vh;
   padding-top: 56px;
+  padding-bottom: 75vh;
   opacity: 1;
   @include breakpoint(phone) {
     min-height: 0vh;
     padding-bottom: 40vh;
   }
-  padding-bottom: 75vh;
 }
 
 // Music styles
