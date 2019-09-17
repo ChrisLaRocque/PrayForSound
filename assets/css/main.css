@@ -24,6 +24,16 @@
   padding-bottom: 30px;
 }
 
+body.links {
+  height: 103vh;
+}
+
+@media (max-width: 37.5em) {
+  body.links {
+    height: 100%;
+  }
+}
+
 * {
   padding: none;
   margin: none;
