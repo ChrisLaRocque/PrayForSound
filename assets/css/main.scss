@@ -359,3 +359,39 @@ footer {
     font-size: 5vh;
   }
 }
+
+// Top Button
+a#topBtnWrapper {
+  opacity: 0;
+  transition: 0.7s opacity;
+  i {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+#topBtn {
+  position: fixed; 
+  bottom: 1vh; 
+  transition: 0.7s scale;
+  right: 2.75vh; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: transparent; 
+  color: $white; 
+  cursor: pointer; 
+  padding: 1.5vh; 
+  border-radius: .25rem; 
+  font-size: 3vh; 
+  @include breakpoint(phone) {
+    right: 0.55vh;
+    bottom: 2vh;
+    padding: 1vh;
+  }
+  &:hover {
+  transform: scale(1.25);
+  }
+}
+
+

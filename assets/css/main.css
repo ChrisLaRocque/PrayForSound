@@ -414,4 +414,44 @@ footer .fa {
 .modal-content i {
   font-size: 5vh;
 }
+
+a#topBtnWrapper {
+  opacity: 0;
+  -webkit-transition: 0.7s opacity;
+  transition: 0.7s opacity;
+}
+
+a#topBtnWrapper i:hover {
+  opacity: 1;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 1vh;
+  -webkit-transition: 0.7s scale;
+  transition: 0.7s scale;
+  right: 2.75vh;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 1.5vh;
+  border-radius: .25rem;
+  font-size: 3vh;
+}
+
+@media (max-width: 37.5em) {
+  #topBtn {
+    right: 0.55vh;
+    bottom: 2vh;
+    padding: 1vh;
+  }
+}
+
+#topBtn:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
 /*# sourceMappingURL=main.css.map */
