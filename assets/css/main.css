@@ -445,7 +445,7 @@ a#topBtnWrapper i:hover {
 @media (max-width: 37.5em) {
   #topBtn {
     right: 0.55vh;
-    bottom: 2vh;
+    bottom: 3vh;
     padding: 1vh;
   }
 }
