@@ -8,4 +8,42 @@ RewriteRule ^(.+)$ $1.html [L,QSA]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-ErrorDocument 404 /error/404.html
+#404
+ErrorDocument 404 /404.html
+
+#Redirects old pages
+Redirect /album/everything-is-beautiful https://music.prayforsound.com/album/everything-is-beautiful
+Redirect /album/waiting-room https://music.prayforsound.com/album/waiting-room
+Redirect /album/dreamer https://music.prayforsound.com/album/dreamer
+Redirect /album/monophonic https://music.prayforsound.com/album/monophonic
+
+
+Redirect /about /
+Redirect /shows /#tour
+Redirect /music /#waves
+
+#Caching 
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
