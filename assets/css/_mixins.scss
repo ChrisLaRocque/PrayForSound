@@ -16,7 +16,7 @@
       @content;
     }
   } @else if $point == phone {
-    @media (max-width: 37.5em) {
+    @media (max-width: 414px) {
       @content;
     }
   }
