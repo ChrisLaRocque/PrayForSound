@@ -18,8 +18,10 @@
 
 
   <!-- Icons -->
-  <link rel="favicon" type="image/png" href="favicon.ico" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Google analytics -->
   <script>
@@ -113,12 +115,10 @@
               BANDCAMP
             </button>
           </a>
-          <a href="https://athousandarms.store/collections/prayforsound">
             <button type="button" class="btn btn-outline-primary w-100" data-toggle="modal"
-              data-target="#wavesPhysical">
+              data-target="#merchModal">
               MERCH
             </button>
-          </a>
           <a href="http://prayforsound.com/shows">
             <button type="button" class="btn btn-outline-primary w-100" data-toggle="modal"
               data-target="#wavesPhysical">
@@ -178,6 +178,40 @@
     <hr>
     <span>&copy;&nbsp;2019 PRAY FOR SOUND</span>
   </footer>
+
+  <!-- Merch Modal -->
+  <div class="modal fade" id="merchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select Your Region </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center">
+            <a href="https://dunkrecords.com/products/pray-for-sound-waves-2xlp" class="col-lg-6 col-12">
+              <button type="button" class="btn btn-outline-primary w-100">
+                EUROPE VINYL
+              </button>
+            </a>
+            <a href="https://athousandarms.store/collections/prayforsound" class="col-lg-6 col-12">
+              <button type="button" class="btn btn-outline-primary w-100">
+                US VINYL
+              </button>
+            </a>
+            <a href="https://athousandarms.store/collections/prayforsound" class="col-12">
+              <button type="button" class="btn btn-outline-primary inverted w-100">
+                GLOBAL MERCH
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
