@@ -89,7 +89,7 @@ section {
     color: black;
     background-color: $white;
   }
-  @include breakpoint(phone){
+  @include breakpoint(phablet){
     &.w-25 {
       width: 100%!important;
     }
@@ -200,7 +200,7 @@ section {
     padding: .375rem .75rem;
     text-align: center;
     margin: 1vh auto;
-    @include breakpoint(phone){
+    @include breakpoint(phablet){
       display: block;
       width: 100%;
     }
@@ -283,7 +283,7 @@ section {
       border-color: $white;
       text-decoration: none;
     }
-    @include breakpoint(phone){
+    @include breakpoint(phablet){
       width: 100%;
     }
   }

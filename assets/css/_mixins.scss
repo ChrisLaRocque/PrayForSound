@@ -12,7 +12,7 @@
       @content;
     }
   } @else if $point == phablet {
-    @media (min-width: 37.5em) {
+    @media (min-width: 650px) {
       @content;
     }
   } @else if $point == phone {
