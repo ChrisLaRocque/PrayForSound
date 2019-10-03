@@ -7,9 +7,4 @@ steps:
   args: ["build", "-t", "gcr.io/my-project/my-image:$REVISION_ID", "."]
 - name: 'gcr.io/cloud-builders/docker'
   args: ["push", "gcr.io/my-project/my-image:$REVISION_ID"]
-- name: 'gcr.io/cloud-builders/gke-deploy:stable'
-  args:
-  - 'run'
-  - '--image=gcr.io/my-project/my-image:$REVISION_ID'
-  - '--location=us-east4-b'
-  - '--cluster=my-cluster'
+
