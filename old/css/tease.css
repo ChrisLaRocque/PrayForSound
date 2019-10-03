@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: bc-alphapipe, sans-serif; 
+  background-image: url("waves_tease3.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center; 
+  height: 100vh;
+}
+
+#demo {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
+
+.teaser-col {
+  padding: 0;
+}
+
+p {
+  font-size: 5vh;
+}
+i {
+  color: black;
+  font-size: 5vh!important;
+}
+
+@media (max-width: 414px){
+  body {
+    background-size: 175% auto;
+  }
+}

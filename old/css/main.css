@@ -1,0 +1,363 @@
+
+
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: hipstelvetica;
+  src: url('../resources/fonts/hipstelvetica_light.woff');
+}
+
+@font-face {
+  font-family: nexarust;
+  src: url('../resources/fonts/nexarustsansbook.woff');
+}
+
+@font-face {
+  font-family: baskvill;
+  src: url('../resources/fonts/baskvill.woff');
+}
+
+html {
+  overflow-y:scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  width:  1100px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-family: baskvill; 
+  /*
+  background-image: url("../resources/images/tile.jpg");
+  background-repeat: repeat;
+  */
+}
+
+b {
+  font-weight: bold;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -126px;
+}
+
+#banner1, #banner2, #banner3, #banner4, #banner5, #banner6 {
+  display: block;
+  background-repeat: no-repeat;
+	background-position: center; 
+	margin-bottom: 10px;
+	/*padding-top: 240px;*/
+	padding-top: 440px;
+	width:100%;
+	
+
+}
+
+/*
+#banner1 { background-image: url('../resources/images/banner1.png'); }
+#banner2 { background-image: url('../resources/images/banner2.png'); }
+#banner3 { background-image: url('../resources/images/banner3.png'); }
+#banner4 { background-image: url('../resources/images/banner4.png'); }
+#banner5 { background-image: url('../resources/images/banner5.png'); }
+#banner6 { background-image: url('../resources/images/banner6.png'); }
+*/
+
+#banner1 { background-image: url('../resources/images/new_banna.png'); }
+#banner2 { background-image: url('../resources/images/new_banna.png'); }
+#banner3 { background-image: url('../resources/images/new_banna.png'); }
+#banner4 { background-image: url('../resources/images/new_banna.png'); }
+#banner5 { background-image: url('../resources/images/new_banna.png'); }
+#banner6 { background-image: url('../resources/images/new_banna.png'); }
+
+#banner a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+/* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+#mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
+.mc-field-group { display: inline-block; } /* positions input field horizontally */
+#mc_embed_signup input.email {font-family:"baskvill","Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #d1d1d1; color: #000; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup .clear {display: inline-block;} /* positions button horizontally in line with input */
+#mc_embed_signup .button {font-family:"baskvill"; font-size: 12px; border: none; letter-spacing: .03em; color: #fff; background-color: #7f7f7f; box-sizing:border-box; height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s;}
+#mc_embed_signup .button:hover {background-color:#000; cursor:pointer;}
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+@media (max-width: 768px) {
+    #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
+    #mc_embed_signup .clear {display: block; width: 100% }
+    #mc_embed_signup .button {width: 100%; margin:0; }
+}
+
+
+#mc_embed_signup {
+  background:#fff; 
+  clear:left; 
+  /*font:14px Helvetica,Arial,sans-serif; */
+  font-family: baskvill,Arial;
+  font-size: 22px;
+  width:100%;
+  margin-top: -18px;
+}
+input.button {
+	
+	color:red;
+}
+
+hr {
+  /*
+  color: #e5e5e5;
+  background-color: #e5e5e5;
+  */
+  color: #d1d1d1;
+  background-color: #d1d1d1;
+  height: 1px;
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 32px;
+}
+
+nav {
+  font-family: nexarust;
+  /*font-family: hipstelvetica;*/
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+a {
+  color: #7a7a7a;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li a:hover { 
+  color: #000000;
+}
+
+/* Create space between the navigation links. */
+nav li:before { 
+  content: "\0000a0";
+  letter-spacing: 30px;
+} 
+
+/* Create extra space before the first navigation link. */
+nav li:first-child:before { 
+  content: "\0000a0";
+  letter-spacing: 0px;
+}
+
+#content {
+  margin: 0 auto;
+  width: 950px;
+  font-size: 16px;
+}
+
+
+
+.news_maincontent {
+  width: 550px;
+  float: left;
+}
+
+.news_sidebar {
+  width: 350px;
+  float: right;
+}
+
+
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: nexarust;
+  /*font-family: hipstelvetica;*/
+  font-size: 17px;
+}
+
+#showsheader h1 {
+  margin-bottom: 20px;
+}
+
+.newsheader {
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+
+.newsheader .newstitle {
+  font-weight: bold;
+}
+
+.newsheader .newsdate {
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+.newsdate {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.newscontent {
+  padding-left: 30px;
+  padding-right: 10px;
+  /*padding-bottom: 30px;*/
+}
+
+
+
+
+figure {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+figure a:hover {
+  color: #ff0000;
+}
+
+figcaption {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.promo {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/* Hover effect on albums in new_music.html */
+/*
+.album:hover { 
+  outline: 2px solid black; 
+} 
+
+.album { 
+  border: 0px solid white; 
+} 
+.album:hover { 
+  outline: 2px solid black; 
+} 
+*/
+
+
+
+.musicrow {
+  text-align: center;
+}
+
+.musicrow a { 
+}
+
+
+
+
+
+
+.section {
+  padding-bottom: 5px;
+}
+
+.lastsection {
+  padding-bottom: 0px;
+}
+
+.sectioncentered {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.lastsectioncentered {
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.quote {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.quotesource {
+  text-align: center;
+  font-size: 11px;
+}
+
+.lastquote {
+   padding-bottom: 0px; 
+   text-align: center;
+}
+
+.youtube {
+	display: block;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+.youtubelast {
+	display: block;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    border: 0;
+}
+
+
+
+#footer, #push {
+	padding-top: 50px;
+	height: 54px; /* #push must be the same height as #footer */
+
+}
+
+#footer {
+  /*padding-top: 10px;*/
+  text-align: center;
+  clear: both;
+}
+
+#sociallinks a{
+	text-decoration: none;
+}
+
+#footer p {
+  /*padding-top: 12px;*/
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  color: #7a7a7a;
+}
