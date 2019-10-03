@@ -201,8 +201,8 @@ section {
     text-align: center;
     margin: 1vh auto;
     @include breakpoint(phablet){
-      display: block;
-      width: 100%;
+      display: block!important;
+      width: 100%!important;
     }
     &:hover {
       opacity: 1;

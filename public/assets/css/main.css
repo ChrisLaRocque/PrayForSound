@@ -137,7 +137,7 @@ section {
   background-color: white;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 800px) {
   .btn-outline-primary.w-25 {
     width: 100% !important;
   }
@@ -235,10 +235,10 @@ section {
   margin: 1vh auto;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 800px) {
   #tour .bit-event-list-title {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
   }
 }
 
@@ -336,7 +336,7 @@ section {
   text-decoration: none;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 800px) {
   #tour .bit-play-my-city-button {
     width: 100%;
   }
