@@ -26,11 +26,9 @@
     },
     {
         "name": "string"
-        ...
     },
     {
         "name": "string"
-        ...
     }
     ],
     "timeout": "string (Duration format)",
@@ -41,7 +39,7 @@
         "diskSizeGb": "string (int64 format)",
         "substitutionOption": "enum(SubstitutionOption)",
         "logStreamingOption": "enum(LogStreamingOption)",
-        "logging": "enum(LoggingMode)"
+        "logging": "enum(LoggingMode)",
         "env": [
         [
             "string",
@@ -50,7 +48,7 @@
         ]
         ],
         "secretEnv": "string",
-        "volumes": "object(Volume)",
+        "volumes": "object(Volume)"
     },
     "substitutions": "map (key: string, value: string)",
     "tags": [
