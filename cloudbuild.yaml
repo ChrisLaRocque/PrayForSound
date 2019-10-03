@@ -1,6 +1,3 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["build", "-t", "gcr.io/my-project/my-image:$REVISION_ID", "."]
-- name: 'gcr.io/cloud-builders/docker'
-  args: ["push", "gcr.io/my-project/my-image:$REVISION_ID"]
 
