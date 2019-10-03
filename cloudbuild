@@ -1,0 +1,72 @@
+{
+    "steps": [
+    {
+        "name": "string",
+        "args": [
+        [
+            "string",
+            "string",
+            "..."
+        ]
+        ],
+        "env": [
+        [
+            "string",
+            "string",
+            "..."
+        ]
+        ],
+        "dir": "string",
+        "id": "string",
+        "waitFor": "string",
+        "entrypoint": "string",
+        "secretEnv": "string",
+        "volumes": "object(Volume)",
+        "timeout": "string (Duration format)"
+    },
+    {
+        "name": "string"
+        ...
+    },
+    {
+        "name": "string"
+        ...
+    }
+    ],
+    "timeout": "string (Duration format)",
+    "logsBucket": "string",
+    "options": {
+        "sourceProvenanceHash": "enum(HashType)",
+        "machineType": "enum(MachineType)",
+        "diskSizeGb": "string (int64 format)",
+        "substitutionOption": "enum(SubstitutionOption)",
+        "logStreamingOption": "enum(LogStreamingOption)",
+        "logging": "enum(LoggingMode)"
+        "env": [
+        [
+            "string",
+            "string",
+            "..."
+        ]
+        ],
+        "secretEnv": "string",
+        "volumes": "object(Volume)",
+    },
+    "substitutions": "map (key: string, value: string)",
+    "tags": [
+    [
+        "string",
+        "string",
+        "..."
+    ]
+    ],
+    "secrets": "object(Secret)",
+    "images": [
+    [
+        "string",
+        "string",
+        "..."
+    ]
+    ],
+    "artifacts": "object(Artifacts)"
+}
