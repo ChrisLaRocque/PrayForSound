@@ -15,7 +15,10 @@ script:
   - cd functions
   - npm install
   - npm run lint
+  - npm run test
+  - cd ..
 deploy:
   provider: firebase
   token:
     secure: "$FIREBASE_TOKEN"
+  skip_cleanup: true
