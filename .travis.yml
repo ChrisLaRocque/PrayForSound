@@ -11,13 +11,15 @@
 language: node_js
 node_js:
   - "node"
+script:
+  - cd functions
+  - npm install
+  - cd ..
 deploy:
   provider: firebase
+  project: pray-for-sound
   token:
     secure: "$FIREBASE_TOKEN"
   skip_cleanup: true
 
-  # deploy:
-  # provider: firebase
-  # token:
-  #   secure: $FIREBASE_TOKEN"
+  
