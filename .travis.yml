@@ -1,25 +1,9 @@
-# language: node_js
-
-# node_js: 8
-
-# before_script:
-# - npm install -g firebase-tools
-
-# script:
-#   - firebase deploy --project pray-for-sound --token $FIREBASE_TOKEN
-
-# language: node_js
-# node_js:
-#   - "node"
-# script:
-#   - cd functions
-#   - npm install
-#   - cd ..
-# deploy:
-#   provider: firebase
-#   project: pray-for-sound
-#   token:
-#     secure: "$FIREBASE_TOKEN"
-#   skip_cleanup: true
-
-  
+language: node_js
+node_js:
+  - "8"
+script:
+ - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --project pray-for-sound --token $FIREBASE_TOKEN
