@@ -1,6 +1,9 @@
 language: node_js
+
 node_js: 7
-install:
-  - npm install -g firebase-tools
-after_success:
+
+before_script:
+- npm install -g firebase-tools
+
+script:
   - firebase deploy --project pray-for-sound --token $FIREBASE_TOKEN
