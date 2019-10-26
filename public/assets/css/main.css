@@ -34,6 +34,10 @@ body.links {
   }
 }
 
+#stream-video {
+  padding: 0;
+}
+
 * {
   padding: none;
   margin: none;
