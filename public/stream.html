@@ -72,18 +72,49 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- Dummy div to load nav -->
-    <!-- <div class="load" id="nav"></div> -->
 
     <!-- Full width video -->
     <section id="stream-video">
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
+        <div id="player"></div>
       </div>
     </section>
 
-    <!-- Button Links to Songs -->
-    <section>
+    <section id="control-buttons">
+      <div class="container">
+        <div class="row">
+            <h2>JUMP TO SONG</h2>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">ALL THE DAYS</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">JULIA</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">SPIRAL</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">THE MOUNTAIN</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">WAVES</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">WREN</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">THE CANYON</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">TALUS</button>
+          </div>
+          <div class="col-lg-4 col-12">
+              <button class="btn btn-outline-primary w-100" id="btnSeek" data-seek="30.7">EZRA</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="text-center">
