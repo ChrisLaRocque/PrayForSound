@@ -19,8 +19,7 @@ function onYouTubeIframeAPIReady() {
       showinfo: '0'
     },
     events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
+      'onReady': onPlayerReady
     }
   });
 }
@@ -31,22 +30,7 @@ function onPlayerReady(event) {
   event.target.playVideo();
 }
 
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false;
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}
-function stopVideo() {
-  player.stopVideo();
-}
-
-$(function() {
-    
+$(function() {  
   $(document).on('click', '#btnSeek', function() {
       player.seekTo($(this).data('seek'), true);
   });
