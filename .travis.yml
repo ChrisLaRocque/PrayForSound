@@ -14,3 +14,4 @@ after_success:
   - firebase deploy --project pray-for-sound --token $FIREBASE_TOKEN
 notifications:
   slack: prayforsound:Ban1Kk9gM1qCjVqpi1cJjgiW
+  webhooks: http://prayforsound.com/notifications
