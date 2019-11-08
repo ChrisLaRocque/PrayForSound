@@ -1,0 +1,61 @@
+body.page-blog {
+  .wtf {
+    border: 1px solid red;
+  }
+  background: #141414;
+  h1, h2, h3, button {
+    text-transform: uppercase;
+  }
+  #blog-feature {
+    height: 85vh;
+    background-image: url('//source.unsplash.com/user/erondu/1600x900');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    .gradient-overlay {
+      height: 100%!important;
+      background: rgb(20,20,20);
+      background: -moz-linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0.2777311608237045) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0.2777311608237045) 100%);
+      background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0.2777311608237045) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#ffffff",GradientType=1); 
+      .container-fluid {
+        height: 100%!important;
+        .row {
+          height: 100%!important;
+          .col-12 {
+            margin-left: 10vh;
+            @include breakpoint(phone) {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog-post {
+    margin: 2vh auto;
+    .post-img {
+      background-image: url('http://localhost:1337/uploads/6e64da895f6a4d78a394b76f6a69eead.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include breakpoint(phone) {
+        height: 15vh;
+        margin-bottom: 2vh;
+      }
+    }
+    .post-info {
+      .post-button {
+        width: 50%;
+        margin-bottom: 0;
+        @include breakpoint(phone) {
+          width: 100%;
+        }
+      }
+    }
+    .post-body {
+      margin-top: 2vh;
+    }
+
+  }
+}
