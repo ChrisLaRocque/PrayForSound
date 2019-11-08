@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "maxLength": 36,
+      "required": true,
+      "unique": true,
+      "minLength": 10,
+      "type": "string"
+    },
+    "publish_date": {
+      "required": true,
+      "type": "date"
+    },
+    "body": {
+      "maxLength": 1200,
+      "required": true,
+      "minLength": 80,
+      "type": "text"
+    },
+    "header_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "blurb": {
+      "maxLength": 120,
+      "required": true,
+      "minLength": 25,
+      "type": "text"
+    }
+  }
+}
