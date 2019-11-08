@@ -79,6 +79,8 @@ body.page-blog #blog-feature .gradient-overlay .container-fluid .row {
 
 body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-post {
   margin-left: 10vh;
+  position: absolute;
+  top: 33%;
 }
 
 @media (max-width: 414px) {

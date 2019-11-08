@@ -25,6 +25,8 @@ body.page-blog {
           height: 100%!important;
           .featured-post {
             margin-left: 10vh;
+            position: absolute;
+            top: 33%;
             @include breakpoint(phone){
               margin-left: 0;
             }
