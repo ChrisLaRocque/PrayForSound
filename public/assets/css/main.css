@@ -54,7 +54,7 @@ body.page-blog h1, body.page-blog h2, body.page-blog h3, body.page-blog button {
 }
 
 body.page-blog #blog-feature {
-  height: 85vh;
+  height: 87vh;
   background-image: url("//source.unsplash.com/user/erondu/1600x900");
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,9 +78,9 @@ body.page-blog #blog-feature .gradient-overlay .container-fluid .row {
 }
 
 body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-post {
-  margin-left: 10vh;
   position: absolute;
   top: 33%;
+  padding-left: 10vh;
 }
 
 @media (max-width: 414px) {
@@ -89,43 +89,64 @@ body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-p
   }
 }
 
-body.page-blog .blog-post {
+body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-post .featured-blurb {
+  margin-right: 0;
+}
+
+body.page-blog #blog-list {
+  padding: 4vh 2vh;
+}
+
+body.page-blog #blog-list #blog-posts .blog-post {
   margin: 2vh auto;
 }
 
-body.page-blog .blog-post .post-img {
+body.page-blog #blog-list #blog-posts .blog-post .post-img {
   background-image: url("http://localhost:1337/uploads/6e64da895f6a4d78a394b76f6a69eead.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 414px) {
-  body.page-blog .blog-post .post-img {
+  body.page-blog #blog-list #blog-posts .blog-post .post-img {
     height: 15vh;
     margin-bottom: 2vh;
   }
 }
 
-body.page-blog .blog-post .post-info .post-button {
+@media (max-width: 414px) {
+  body.page-blog #blog-list #blog-posts .blog-post .post-info {
+    padding: 0;
+  }
+}
+
+body.page-blog #blog-list #blog-posts .blog-post .post-info .post-button {
   width: 40%;
   margin-bottom: 0;
   color: #141414;
   background-color: white;
 }
 
-body.page-blog .blog-post .post-info .post-button:hover {
+body.page-blog #blog-list #blog-posts .blog-post .post-info .post-button:hover {
   color: white;
   background-color: transparent;
 }
 
 @media (max-width: 414px) {
-  body.page-blog .blog-post .post-info .post-button {
+  body.page-blog #blog-list #blog-posts .blog-post .post-info .post-button {
     width: 100%;
   }
 }
 
-body.page-blog .blog-post .post-body {
+body.page-blog #blog-list #blog-posts .blog-post .post-body {
   margin-top: 2vh;
+  padding-left: 0;
+}
+
+@media (max-width: 414px) {
+  body.page-blog #blog-list #blog-posts .blog-post .post-body {
+    padding: 0;
+  }
 }
 
 * {

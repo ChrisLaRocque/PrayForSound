@@ -1,17 +1,26 @@
 body.page-blog {
+  // When you have no idea what's happening
   .wtf {
     border: 1px solid red;
   }
+
+  // Body BG (off-black)
   background: #141414;
+
+  // "aLl ThE tExT nEeDs To bE cApItAlIzEd" - Bruce
   h1, h2, h3, button {
     text-transform: uppercase;
   }
+
+  // Featured Section
   #blog-feature {
-    height: 85vh;
+    height: 87vh;
     background-image: url('//source.unsplash.com/user/erondu/1600x900');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
+    
+    // Dank Gradient
     .gradient-overlay {
       height: 100%!important;
       background: rgb(20,20,20);
@@ -23,47 +32,71 @@ body.page-blog {
         height: 100%!important;
         .row {
           height: 100%!important;
+
+          // Featured Post
           .featured-post {
-            margin-left: 10vh;
             position: absolute;
             top: 33%;
+            padding-left: 10vh;
             @include breakpoint(phone){
               margin-left: 0;
             }
+            .featured-blurb {
+              margin-right: 0;
+            }
+          }
+          // End Featured Post
+        }
+      }
+      // End Container
+    }
+    // End Gradient
+  }
+
+  #blog-list {
+    padding: 4vh 2vh;
+    // Post List
+    #blog-posts{
+      // Individual post styles
+      .blog-post {
+        margin: 2vh auto;
+        .post-img {
+          background-image: url('http://localhost:1337/uploads/6e64da895f6a4d78a394b76f6a69eead.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          @include breakpoint(phone) {
+            height: 15vh;
+            margin-bottom: 2vh;
+          }
+        }
+        // Header+blurb+button
+        .post-info {
+          @include breakpoint(phone){
+            padding: 0;
+          }
+          .post-button {
+            width: 40%;
+            margin-bottom: 0;
+            color: #141414;
+            background-color: white;
+            &:hover{
+              color: white;
+              background-color: transparent;
+            }
+            @include breakpoint(phone) {
+              width: 100%;
+            }
+          }
+          //End Button
+        }
+        .post-body {
+          margin-top: 2vh;
+          padding-left: 0;
+          @include breakpoint(phone){
+            padding: 0;
           }
         }
       }
     }
-  }
-  .blog-post {
-    margin: 2vh auto;
-    .post-img {
-      background-image: url('http://localhost:1337/uploads/6e64da895f6a4d78a394b76f6a69eead.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      @include breakpoint(phone) {
-        height: 15vh;
-        margin-bottom: 2vh;
-      }
-    }
-    .post-info {
-      .post-button {
-        width: 40%;
-        margin-bottom: 0;
-        color: #141414;
-        background-color: white;
-        &:hover{
-          color: white;
-          background-color: transparent;
-        }
-        @include breakpoint(phone) {
-          width: 100%;
-        }
-      }
-    }
-    .post-body {
-      margin-top: 2vh;
-    }
-
   }
 }
