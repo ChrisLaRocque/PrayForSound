@@ -77,16 +77,6 @@ body.page-blog #blog-feature .gradient-overlay .container-fluid .row {
   height: 100% !important;
 }
 
-body.page-blog #blog-feature .gradient-overlay .container-fluid .row .col-12 {
-  margin-left: 10vh;
-}
-
-@media (max-width: 414px) {
-  body.page-blog #blog-feature .gradient-overlay .container-fluid .row .col-12 {
-    margin-left: auto;
-  }
-}
-
 body.page-blog .blog-post {
   margin: 2vh auto;
 }
@@ -105,8 +95,15 @@ body.page-blog .blog-post .post-img {
 }
 
 body.page-blog .blog-post .post-info .post-button {
-  width: 50%;
+  width: 40%;
   margin-bottom: 0;
+  color: #141414;
+  background-color: white;
+}
+
+body.page-blog .blog-post .post-info .post-button:hover {
+  color: white;
+  background-color: transparent;
 }
 
 @media (max-width: 414px) {

@@ -2,7 +2,8 @@
 featuredPost = function(data){
   var featured = data[0];
   var pubDate = new Date(featured.publish_date);
-  var template = '<div class="col-xl-4 col-12"><h2>' + featured.title + '</h2><hr><span>' + pubDate.toLocaleDateString('en-US') + '</span><p>' + featured.blurb + '</p><button class="btn btn-outline-primary w-100" data-toggle="collapse" data-target="#collapseExample' + featured.id + '" aria-expanded="false" aria-controls="collapseExample' + featured.id + '">Read Me</button></div><div class="col-12"><p class="collapse" id="collapseExample' + featured.id + '">' + featured.body + '</p></div>';
+  // var template = '<h2>' + featured.title + '</h2><hr><span>' + pubDate.toLocaleDateString('en-US') + '</span><p>' + featured.blurb + '</p><button class="btn btn-outline-primary w-100" data-toggle="collapse" data-target="#collapseExample' + featured.id + '" aria-expanded="false" aria-controls="collapseExample' + featured.id + '">Read Me</button><p class="collapse" id="collapseExample' + featured.id + '">' + featured.body + '</p>';
+  var template = '<h2>' + featured.title + '</h2><hr><span>' + pubDate.toLocaleDateString('en-US') + '</span><p>' + featured.blurb + '</p><button class="btn btn-outline-primary w-100" data-toggle="collapse" data-target="#collapseExample' + featured.id + '" aria-expanded="false" aria-controls="collapseExample' + featured.id + '">Read Me</button><p class="collapse" id="collapseExample' + featured.id + '">' + featured.body + '</p>';
   var headerHash = featured.header_image.hash;
   var headerIMG = 'http://localhost:1337/uploads/' + headerHash + '.jpg';
 
