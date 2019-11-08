@@ -77,6 +77,16 @@ body.page-blog #blog-feature .gradient-overlay .container-fluid .row {
   height: 100% !important;
 }
 
+body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-post {
+  margin-left: 10vh;
+}
+
+@media (max-width: 414px) {
+  body.page-blog #blog-feature .gradient-overlay .container-fluid .row .featured-post {
+    margin-left: 0;
+  }
+}
+
 body.page-blog .blog-post {
   margin: 2vh auto;
 }

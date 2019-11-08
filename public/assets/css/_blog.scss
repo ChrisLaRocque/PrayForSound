@@ -22,7 +22,13 @@ body.page-blog {
       .container-fluid {
         height: 100%!important;
         .row {
-          // height: 100%!important;
+          height: 100%!important;
+          .featured-post {
+            margin-left: 10vh;
+            @include breakpoint(phone){
+              margin-left: 0;
+            }
+          }
         }
       }
     }
