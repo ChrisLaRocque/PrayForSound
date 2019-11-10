@@ -15,11 +15,6 @@
       "unique": true,
       "required": true,
       "type": "string"
-    },
-    "restaurants": {
-      "collection": "restaurant",
-      "via": "categories",
-      "dominant": true
     }
   }
 }
