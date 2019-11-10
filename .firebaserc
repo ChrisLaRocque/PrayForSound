@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pray-for-sound"
+    "default": "pray-for-sound",
+    "staging": "pray-for-sound-staging"
   }
 }
