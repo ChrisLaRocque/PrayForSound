@@ -2,9 +2,7 @@ language: node_js
 node_js:
   - "8"
 # safelist
-branches:
-  only:
-  - master
+if: branch = master
 script:
  - cd functions && npm install && cd -
  - echo "Deploy!!"
@@ -12,6 +10,18 @@ install:
   - npm install -g firebase-tools
 after_success:
   - firebase deploy --project pray-for-sound --token $FIREBASE_TOKEN
+notifications:
+  slack: prayforsound:Ban1Kk9gM1qCjVqpi1cJjgiW
+  webhooks: http://prayforsound.com/notifications
+
+if: branch = develop
+script:
+ - cd functions && npm install && cd -
+ - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --project pray-for-sound-staging --token $FIREBASE_TOKEN
 notifications:
   slack: prayforsound:Ban1Kk9gM1qCjVqpi1cJjgiW
   webhooks: http://prayforsound.com/notifications
