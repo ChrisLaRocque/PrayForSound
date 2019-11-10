@@ -45,10 +45,6 @@ body.page-blog {
   background: #141414;
 }
 
-body.page-blog .wtf {
-  border: 1px solid red;
-}
-
 body.page-blog h1, body.page-blog h2, body.page-blog h3, body.page-blog button {
   text-transform: uppercase;
 }
