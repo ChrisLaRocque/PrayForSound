@@ -41,14 +41,13 @@ postsList = function(data) {
 var cmsAPI = "http://localhost:1337/posts?_sort=publish_date:DESC";
 $.getJSON(cmsAPI)
   .done(function (data) {
+    
     // Check publish date is within the scope of time we've experienced thus far
     var date = new Date();
     date = date.toISOString();
     for (var i = 0; i < data.length; i++){
-      if (data[i].publish_date > date) {
-        console.log(data[i]);
-        // data.splice(i, 1);
-        // console.log(data);
+      while (data[i].publish_date > date) {
+        data.splice(i, 1);
       }
     }
     
