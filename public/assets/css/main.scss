@@ -11,6 +11,9 @@
   padding: none;
   margin: none;
 }
+.wtf {
+  border: 2px solid red;
+}
 body {
   color: $white;
   background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(73,30,107,1) 50%, rgba(239,118,47,1) 100%); 

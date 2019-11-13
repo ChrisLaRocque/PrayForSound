@@ -16,6 +16,13 @@
   }
 }
 
+.press_page #press .press-item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2vh;
+}
+
 .press_page .photo-gallery .photos {
   padding-bottom: 20px;
 }
@@ -150,6 +157,10 @@ body.page-blog #blog-list #blog-posts .blog-post .post-body {
 * {
   padding: none;
   margin: none;
+}
+
+.wtf {
+  border: 2px solid red;
 }
 
 body {

@@ -1,5 +1,5 @@
 {
-  "host": "localhost",
+  "host": "https://pray-for-sound-staging.firebaseapp.com/",
   "port": 1337,
   "production": true,
   "proxy": {
